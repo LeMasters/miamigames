@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/10-inbox/supplemental-games-course-notes/","tags":["homepage","DG"],"created":"2026-01-30T16:51:12.252-05:00","updated":"2026-01-30T18:39:19.847-05:00"}
+{"dg-publish":true,"permalink":"/10-inbox/supplemental-games-course-notes/","tags":["homepage","DG","gardenEntry"],"created":"2026-01-30T16:51:12.252-05:00","updated":"2026-01-30T18:42:05.254-05:00"}
 ---
 
 
