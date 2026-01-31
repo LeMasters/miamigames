@@ -1,9 +1,31 @@
 ---
-{"dg-publish":true,"permalink":"/10-inbox/ims-213-sp-2026-unreal-intro/","tags":["IMS213","tutorial"],"created":"2026-01-30T15:37:11.009-05:00","updated":"2026-01-30T18:41:27.461-05:00"}
+{"dg-publish":true,"permalink":"/10-inbox/ims-213-sp-2026-unreal-intro/","tags":["IMS213","tutorial"],"created":"2026-01-30T15:37:11.009-05:00","updated":"2026-01-30T19:00:45.908-05:00"}
 ---
 
 
-## Agenda
+# Video from Jan 29 2026
+
+Here's a video, hosted on YouTube, of one of the class sessions from Thursday 29 January, introducing Unreal 5.7.
+
+https://youtu.be/DceRaRHHo1w
+
+Please note that you need to be signed in to YouTube with your Miami ID to watch the video.
+
+Below are my notes from the class. They are in a kind of shorthand, and so may not be as useful as watching the video, above.
+
+## For Tuesday 3 February
+
+Your assignment:
+Using the shapes and techniques we've talked about
+BUILD SOMETHING. Create some MODERN ART-style sculpture in the middle of the PLAYGROUND space we cleared out on Thursday (29 January). Try to use at least a dozen different static meshes of all shapes, sizes, rotations.
+
+There's no need to add materials (color, texture) for now: Just the raw shapes are a great way to get started!
+
+---
+
+## Agenda Thursday Jan 29
+
+#### Introducing UNREAL ENGINE 5.7
 
 Unreal is a challenging environment: Our goal is to begin to master the environment.
 
@@ -64,8 +86,9 @@ We'll come back
 
 Give proj meaningful name. No spaces, always letter first, always short. I go with dates in my names
 
-IMS213FirstDemoJan29
-Create, it'll compile as it launches Unreal Engine 5.7
+**IMS213FirstDemoJan29**
+
+Create it. It'll compile as it launches Unreal Engine 5.7
 
 ### Customizing Details in the Viewport
 
@@ -124,9 +147,10 @@ These things, grey, green, are what we call STATIC MESHES. 95% of the time this 
 
 Let's look at one closely.
 
+#### Selecting a Mesh
 
+Now SELECT the cylinder in center by clicking on it.
 
-Now select the cylinder in center
 Yellow outline means it is selected.
 
 Look in your outliner to see it selected
@@ -136,20 +160,20 @@ Use mouse wheel to zoom in out
 Get a bit away from it.
 hold ALT + LEFT mouse button + Mouse left-right to orbit. Reposition if necessary. Click F again, then orbit.
 
-Go back to 1, pick something, zoom in out orbit orbit it.
+Go back to CAMERA1, pick something, zoom in out orbit orbit it.
 
-Go back to 3 pick something zoom in out orbit.
+Go back to CAMERA3 pick something zoom in out orbit.
 
 
 OK
 
 Let's use the outliner
-FIRST 
-Things are often going to get messed up
-OK
-SO bring the outliner panel out, make it big
-That can be useful
-Sometimes you may even want to get rid of it, or might do it accidentally
+
+#### What to Do When the Interface Gets Messed Up?
+
+#### I.E., Missing Windows, Tabs, Etc.
+
+What happens when my interface gets messed up?
 
 Close Outliner, stretch details panel
 OK
@@ -173,9 +197,10 @@ Now back to double click on FLOOR
 
 Let's rename it to MYFLOOR
 naming things and ordering them in the OUTLINER REALLY IMPORTANT
-To RENAME: either RightClick > EDIT > RENAME or F2 or select it then click again
+To RENAME: 
+	either RightClick > EDIT > RENAME or F2 or select it then click again
 
-now go back to 1
+now go back to CAMERA1
 Pick cylinder in center
 See it in OUTLINER
 Now delete it
@@ -184,19 +209,23 @@ Gone from Outliner
 Gone from your game
 
 Did you do that accidentally,
-CTRL - Z to undo, will bring it back.
+CTRL - Z to undo -- this key combo will UNDO the deletion.
 
-But delete it again,
-delete everything in the center
+But go ahead and delete it again,
+In fact, to prep for our first project,
+go ahead and delete everything in the center of the PLAYGROUND.
+
 If you accidentally delete floor,
-Bring it back.
+Bring it back with CTRL-Z.
 
 so everything from the middle is gone
 GREAT
 Let's SAVE the project
 
+### Saving the Project
+
 Look on tab
-LvL_ThirdPerson ASTERISK
+LvL_ThirdPerson followed by anASTERISK
 An asterisk next to something always means UNSAVED
 But LvL_ThirdPerson wasn't the name we assigned our PROJECT.
 Project name is on upper right hand side
@@ -204,30 +233,44 @@ LEVEL name, is on the TAB
 
 Your games will typically have several levels, this is just the default
 
-SO LET'S SAVE EVERYTHING SAVE ALL
+SO LET'S SAVE EVERYTHING 
+
+CHOOSE "SAVE ALL" from the drop-down menu.
+
 Quit UNREAL.
 Go to PROJECTS
 Open that directory
 When things break, we'll often have to come back here to fix things.
-.uproject is MAIN FILE
-SAVED folder is where your screenshots will go
-INTERMEDIATE and DATACACHE are processing files and are generally disposable
+.uproject is the MAIN project FILE
+
+The SAVED folder is where your screenshots will eventually go
+
+The INTERMEDIATE and DATACACHE folders are processing files and are generally disposable (but we want to avoid that if we can)
+
 CONFIG is where your project config files are stored
-CONTENT is the MAIN MAGIC FOLDER
-It is where your assets are stored
+
+Finally, the CONTENT folder is the MAIN FOLDER
+It is where all your project's assets are stored
 It is shaped by you, but as we go, we'll talk about the standards that you need to adhere to.
-Open content, choose Third Person
-There is Lvl_ThirdPerson.umap
-That is the level we were editing.
+Let's have a look!
+Open the CONTENT folder, choose the Third Person folder.
+
+In there, you'll see the file 
+	Lvl_ThirdPerson.umap
+That is the level we were just editing.
 
 NOW:
-We can see these files, rename them, delete them, add files, etc.
-
-For the most part, don't do that. Leave these files alone. ONLY MAKE CHANGES from within UNREAL's file browser, not from within YOUR file browser, OK?
+Technically, we can rename these files, delete them, add new files, etc.
+BUT
+For the most part, **don't do that**. Leave these files alone. ONLY MAKE CHANGES from within UNREAL's file browser, not from within YOUR file browser, OK?
 
 But let's do ONE THING before we go.
 
+### Backing Up Your Project
+
 Go up to the project level and right click on project file and create a zip. Rename it BACKUP DAY ONE.zip. Now if you get in trouble, you have this perfect copy of your project that you can come back to.
+
+### Placing Actors in Your Project
 
 Go back to launcher, open project by double-clicking it.
 
@@ -252,6 +295,11 @@ type in location data
 or put mouse in window LMB mouse move
 
 Reset it to 0,0,0 with tiny back arrow icon
+
+### Other Kinds of Transforms
+
+#### Rotate and Scale
+
 TWO OTHER TRANSFORMS
 Upper lefthand of viewport buttons
 CHOOSE ROTATE
@@ -266,7 +314,7 @@ OR reset in the details panel
 
 GRAB the MIDDLE of the SCALE GIZMO
 in order to scale things uniformly
-reset it
+reset it by hitting the little "back" arrow next to the SCALE TRANSFORM data in the DETAILS panel (bottom right panel on screen).
 
 LOCATION GIZMO
 DRAG Cube above floor
@@ -275,6 +323,9 @@ It aligns the faces
 On Mac FN RIGHT ARROW
 
 Now lets create duplicates and place them
+
+#### Renaming
+
 To keep track tho let's rename the cube
 Go to the OUTLINER
 Rename (F2) to SM_MyCube
@@ -282,6 +333,7 @@ ALWAYS ALWAYS ALWAYS SM_name
 SM stands for static mesh
 You will have hundreds and hundreds of different actors in your outliner YOU NEED TO BE ABLE TO LOOK AT THEM AND KNOW IN AN INSTANT, AH, that's a mesh, that's a blueprint, that's a widget, that's a light. YOU MUST ADOPT THIS HABIT.
 
+#### Duplicate and Move
 
 Select myCube
 Select move gizmo
@@ -302,7 +354,9 @@ rename it to MYSPHERE so it doesn't get lost
 
 OK.
 
-Last thing.
+## Multiple Windows in the Viewport
+
+### CAD/CAM View
 
 the viewport is a miraculous place -- if you've used cad software or blender this will be very familiar.
 
@@ -324,6 +378,11 @@ Put it over top of another cube.
 When we're done, go back to VIEWPORT WINDOWS button and maximize our PERSPECTIVE VIEWPORT view.
 
 They should be almost perfectly placed!
+
+### Grabbing a Screenshot
+
+**WE DIDN'T GET TO THIS YET,**
+**We'll do it on Tuesday!**
 
 Let's grab screenshot
 First position your camera at perfect angle
@@ -359,9 +418,3 @@ Change the scalability setting back to MEDIUM
 Save all
 close out 
 You are done
-
-FOR TUESDAY
-Using the shapes and techniques we've talked about
-BUILD SOMETHING
-Some MODERN ART
-Use at least a dozen different static meshes
